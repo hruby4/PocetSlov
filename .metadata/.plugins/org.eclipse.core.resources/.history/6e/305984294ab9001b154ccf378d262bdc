@@ -1,0 +1,24 @@
+import java.io.File;
+
+
+public class main {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		File file = new File("lm.txt");
+		FileInputStream fis = new FileInputStream(file);
+		String s = "I am Dominik ";
+		int countS= 0;
+		
+		
+		
+		for(int i =0;i<s.length();i++) {
+			
+			if(s.charAt(i)==' ') {
+				countS++;
+			}
+		}
+		System.out.println(countS);
+	}
+
+}

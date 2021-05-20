@@ -1,0 +1,19 @@
+import java.io.File;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File file = new File("lm.txt");
+		String s = "I am Dominik ";
+		int countS= 0;
+		for(int i =0;i<s.length();i++) {
+			
+			if(s.charAt(i)==' ') {
+				countS++;
+			}
+		}
+		System.out.println(countS);
+	}
+
+}

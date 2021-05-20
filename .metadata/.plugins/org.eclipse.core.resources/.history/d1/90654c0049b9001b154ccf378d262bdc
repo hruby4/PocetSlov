@@ -1,0 +1,13 @@
+import java.io.File;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File file = new File("lm.txt");
+		String s = "I am Dominik ";
+		SCount s1 = new SCount();
+		SCount.spacecount(s);
+	}
+
+}

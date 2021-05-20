@@ -1,0 +1,39 @@
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args){
+		// TODO Auto-generated method stub
+		int countS= 0;
+		int countW=0;
+		try {
+		      File file = new File("lm.txt");
+		      Scanner myReader = new Scanner(file);
+		      while (myReader.hasNextLine()) {
+		        String data = myReader.nextLine();
+		        for(int i =0;i<data.length();i++) {
+					
+					if(data.charAt(i)==' ') {
+						countS++;
+					
+					}
+					
+				
+				}
+		        String[] words = data.split("\\s+");
+				
+				countW += words.length;
+		       
+		      }
+		      myReader.close();
+		    } catch (FileNotFoundException e) {
+		      System.out.println("An error occurred.");
+		      e.printStackTrace();
+		    }
+		
+		System.out.println("Count of words is " + countW);
+		System.out.println("Count of spaces is " +countS);
+	}
+
+}
