@@ -23,7 +23,7 @@ public class counter {
 						}
 
 					}
-					String[] words = data.split("\\s+");
+					String[] words = data.split("!\\w");
 
 					countW += words.length;
 
